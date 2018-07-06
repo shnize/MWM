@@ -292,6 +292,7 @@ input:-moz-placeholder {
   font-size: 32px;
   color: #39335b;
   margin-bottom: 60px;
+  margin-top: 32px;
   letter-spacing: 3px;
 }
 .animatedParent {
@@ -346,7 +347,7 @@ header.transparent {
   left: 0;
   width: 100%;
   z-index: 999999;
-  padding: 50px 0 0;
+  padding: 14px 0 0;
   position: absolute;
   margin-bottom: 0;
   background-color: transparent;
@@ -358,7 +359,7 @@ header.transparent .logo-mobile {
 }
 header.active {
   padding: 0;
-  background-color: #1f7fe2;
+  background-color: #fefefe;
 }
 header.active .mobile-menu {
   display: inline-block;
@@ -375,7 +376,7 @@ header .row {
       align-items: center;
 }
 header .logo img {
-  max-width: 144px;
+  max-width: auto;
 }
 header .menu {
   text-align: right;
@@ -408,13 +409,14 @@ header .menu li:hover:before {
   opacity: 1;
 }
 header .menu a {
-  color: rgba(255, 255, 255, 0.9);
+  color: #214D5E;
   font-size: 16px;
   letter-spacing: 1px;
 }
 header .menu .children:hover .sub-menu {
   opacity: 1;
   visibility: visible;
+  color: #76C7C9
 }
 header .menu .children:after {
   content: "";
@@ -489,7 +491,7 @@ header .button-header .custom-btn {
   color: #fff;
   box-shadow: 1px 1px 22px rgba(98, 129, 157, 0.4);
   border-radius: 5px;
-  background: #42cbd1 linear-gradient(69deg, #37ddcb 0%, #42cbd1 80%, #42cbd1 100%);
+  background: #0686D8 linear-gradient(69deg, #0A92DD 0%, #0686D8 80%, #0686D8 100%);
   letter-spacing: 1px;
   display: inline-block;
   text-align: center;
@@ -500,11 +502,12 @@ header .button-header .custom-btn.login {
   margin-right: 7px;
   box-shadow: 1px 1px 22px rgba(14, 21, 34, 0.19);
   border-radius: 5px;
-  background: #5791ef none;
+  background: #39435A none;
 }
 header .button-header .custom-btn.login:hover {
   color: #fff;
-  background-color: #6b9ef1;
+  background-color: #5FB0E5;
+  border-color: #39435A;
 }
 header .button-header .custom-btn:hover {
   opacity: 0.9;
@@ -563,6 +566,23 @@ header .button-header .custom-btn:hover {
   color: #fff;
   background-color: #186ae1;
 }
+
+.recycle-btn {
+    font-size: 14px;
+    color: #fff;
+    padding: 14px 33px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    box-shadow: 1px 1px 11px rgba(98, 129, 157, 0.4);
+    border-radius: 7px;
+    background-color: #5FB0E5;
+    display: inline-block;
+}
+.recycle-btn:hover {
+  transform: scale(1.1);
+  color: #5FB0E5;
+  background-color: #fff;
+}
 /* 02. Owl Nav
    ==================================== */
 .owl-carousel {
@@ -613,9 +633,7 @@ header .button-header .custom-btn:hover {
    ==================================== */
 .partner {
   text-align: center;
-  padding-bottom: 47px;
-  margin-bottom: 65px;
-  border-bottom: 2px solid rgba(219, 234, 248, 0.6);
+  border-top: 2px solid rgba(219, 234, 248, 0.6);
 }
 .partner h5 {
   font-size: 15px;
@@ -646,7 +664,7 @@ header .button-header .custom-btn:hover {
   -ms-transform: scale(1.1);
       transform: scale(1.1);
 }
-/* 04. Why Choose
+/* 04. How To Invest
    ==================================== */
 .why-choose {
   margin-bottom: 88px;
@@ -658,8 +676,8 @@ header .button-header .custom-btn:hover {
   border-radius: 7px;
   background-color: #fff;
 }
-.why-choose .inside a {
-  color: #39335b;
+.why-choose .inside h3 {
+  color: #39435A;
   font-size: 18px;
   margin-bottom: 12px;
   letter-spacing: 2px;
@@ -694,8 +712,8 @@ header .button-header .custom-btn:hover {
   opacity: 1;
 }
 .why-choose .inside > img {
-  height: 76px;
-  margin-bottom: 35px;
+    height: 100px;
+    margin-bottom: 26px;
 }
 .why-choose .inside img {
   vertical-align: middle;
@@ -708,13 +726,13 @@ header .button-header .custom-btn:hover {
 }
 /* 05. Hosting Software
    ==================================== */
-.hosting-software {
+.recycle-repurpose {
   margin-bottom: 113px;
 }
-.hosting-software ul {
+.recycle-repurpose ul {
   text-align: center;
 }
-.hosting-software ul li {
+.recycle-repurpose ul li {
   color: #2e8ff3;
   font-size: 50px;
   text-align: center;
@@ -725,12 +743,12 @@ header .button-header .custom-btn:hover {
   margin-right: 68px;
   padding-right: 72px;
 }
-.hosting-software ul li:last-child {
+.recycle-repurpose ul li:last-child {
   margin-right: 0;
   padding-right: 0;
   border-right: 0;
 }
-.hosting-software ul li span {
+.recycle-repurpose ul li span {
   color: #7c8ca4;
   font-size: 16px;
   text-transform: uppercase;
@@ -739,24 +757,24 @@ header .button-header .custom-btn:hover {
   margin-top: 27px;
   letter-spacing: 1px;
 }
-.hosting-software .title-head {
+.recycle-repurpose .title-head {
   margin-bottom: 71px;
 }
-.hosting-software.white .title-head {
+.recycle-repurpose.white .title-head {
   color: #fff;
 }
-.hosting-software.white li {
+.recycle-repurpose.white li {
   color: #fff;
   border-color: rgba(233, 241, 247, 0.2);
 }
-.hosting-software.white li span {
+.recycle-repurpose.white li span {
   color: rgba(255, 255, 255, 0.5);
 }
 /* 06. Pricing Table
    ==================================== */
 .pricing-table {
   padding: 80px 0 30px 0;
-  background: url(../images/bg-blue.png) no-repeat center;
+  background: url(../images/bg-blue.svg) no-repeat center;
   background-size: cover;
   margin-bottom: 130px;
 }
@@ -1202,18 +1220,18 @@ header .button-header .custom-btn:hover {
 }
 .base-slider h2 {
   font-size: 50px;
-  color: #fff;
+  color: #39435A;
   letter-spacing: 2px;
   margin-bottom: 13px;
   text-transform: capitalize;
   font-family: "HelveticaNeueLight", serif;
 }
 .base-slider p {
-  color: #c0dbf4;
+  color: #39435A;
   font-size: 15px;
-  text-transform: uppercase;
   letter-spacing: 1px;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
+  align-content: center;
 }
 .base-slider p,
 .base-slider a {
@@ -1221,22 +1239,24 @@ header .button-header .custom-btn:hover {
 }
 .base-slider .custom-btn {
   font-size: 14px;
-  color: #2378ec;
+  color: #fff;
   padding: 14px 33px;
   letter-spacing: 1px;
   text-transform: uppercase;
   box-shadow: 1px 1px 11px rgba(98, 129, 157, 0.4);
   border-radius: 7px;
-  background-color: #fff;
+  background-color: #5FB0E5;
   display: inline-block;
 }
 .base-slider .custom-btn:hover {
   -ms-transform: scale(1.1);
       transform: scale(1.1);
+  color: #5FB0E5;
+  background-color: #fff;
 }
 .base-slider .inside {
   width: 100%;
-  top: 44%;
+  top: 40%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
@@ -1246,6 +1266,10 @@ header .button-header .custom-btn:hover {
 .base-slider .owl-prev i,
 .base-slider .owl-next i {
   color: #fff;
+}
+
+.subHeadline {
+  align-content: center;
 }
 /*=====  End of 05. Slider Style  ======*/
 /*==================================
@@ -1263,7 +1287,7 @@ header .button-header .custom-btn:hover {
    ==================================== */
 footer {
   padding-top: 91px;
-  background-color: #1f7fe2;
+  background-color: #0686D8;
 }
 .pre-footer {
   margin-top: -170px;
@@ -1279,6 +1303,7 @@ footer {
   float: left;
   display: inline-block;
   margin-bottom: 115px;
+  flex: 1;
 }
 .widget-footer h4 {
   font-size: 16px;
@@ -1313,7 +1338,7 @@ footer {
   padding-left: 67px;
 }
 .widget-footer.last img {
-  max-width: 144px;
+  max-width: 200px;
   margin-bottom: 23px;
 }
 /* 03. Copyright
@@ -1451,31 +1476,31 @@ footer {
   background-size: cover;
   background: url(../images/bg-team.png) no-repeat;
 }
-.about-block .hosting-software {
+.about-block .recycle-repurpose {
   margin-bottom: 90px;
 }
-.about-block .hosting-software .title-head {
+.about-block .recycle-repurpose .title-head {
   margin-bottom: 43px;
 }
-.about-block .hosting-software ul {
+.about-block .recycle-repurpose ul {
   width: 100%;
   display: inline-block;
 }
-.about-block .hosting-software ul li {
+.about-block .recycle-repurpose ul li {
   width: 28.5%;
   margin-right: 0;
   padding-right: 0;
 }
-.about-block .hosting-software ul li:first-child {
+.about-block .recycle-repurpose ul li:first-child {
   text-align: left;
   width: 22%;
   padding-left: 25px;
 }
-.about-block .hosting-software ul li:last-child {
+.about-block .recycle-repurpose ul li:last-child {
   text-align: right;
   width: 19%;
 }
-.about-block .hosting-software ul li:last-child b:after {
+.about-block .recycle-repurpose ul li:last-child b:after {
   content: "x";
   font-size: 50px;
 }
